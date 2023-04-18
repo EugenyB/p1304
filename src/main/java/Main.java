@@ -8,9 +8,9 @@ public class Main {
         main.run();
     }
 
-    private void run() {
+    private void run() { // Задача "Найбільший в кожному стовпці"
 //      try (BufferedReader reader = new BufferedReader(new FileReader("input.txt"));
-        try (BufferedReader reader = Files.newBufferedReader(Path.of("input.txt"));
+        try (BufferedReader reader = Files.newBufferedReader(Path.of("input.txt")); // Пришвидшене введення
              PrintWriter out = new PrintWriter("output.txt")) {
 
             String line = reader.readLine();
@@ -19,7 +19,7 @@ public class Main {
             int m = Integer.parseInt(s[1]);
             int[][] a = new int[n][m];
             for (int i = 0; i < n; i++) {
-                line = reader.readLine();
+                line = reader.readLine(); // Читає по одному рядку
                 s = line.split(" ");
                 for (int j = 0; j < s.length; j++) {
                     a[i][j] = Integer.parseInt(s[j]);

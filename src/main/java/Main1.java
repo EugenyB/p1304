@@ -9,7 +9,7 @@ public class Main1 {
         main.run();
     }
 
-    private void run() {
+    private void run() { // Задача "Спіраль"
         try {
             Scanner scanner = new Scanner(new File("input.txt"));
             PrintWriter out = new PrintWriter("output.txt");
